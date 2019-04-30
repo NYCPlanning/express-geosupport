@@ -1,0 +1,7 @@
+#!/bin/bash
+
+docker run \
+    -v $PWD:/express-geosupport \
+    -w /express-geosupport \
+    -p 4000:4000 \
+  chriswhong/geosupport $@
